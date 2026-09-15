@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Aroma</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ================= JUMBOTRON ================= -->
+  <div class="jumbotron jumbotron-fluid mb-0">
+    <div class="container">
+      <h1 class="display-4">Café Aroma</h1>
+      <p class="lead">Tradición, sabor y calidez en cada taza</p>
+    </div>
+  </div>
+
+  <!-- ================= CONTENIDO PRINCIPAL ================= -->
+  <div class="container mt-5">
+
+    <!-- 3 párrafos con título y descripción sobre el producto -->
+    <div class="row mb-5">
+      <div class="col-md-4">
+        <h3>Café de origen</h3>
+        <p>Seleccionamos granos 100% arábica provenientes de fincas locales, tostados artesanalmente para resaltar su aroma y sabor natural.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Ambiente acogedor</h3>
+        <p>Nuestro espacio está pensado para disfrutar, trabajar o conversar con tranquilidad, con música suave y buena iluminación natural.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Repostería artesanal</h3>
+        <p>Cada día horneamos panes y postres frescos que acompañan perfectamente cualquiera de nuestras bebidas de especialidad.</p>
+      </div>
+    </div>
+
+    <hr class="mb-5">
+
+    <!-- ================= LISTADO DE PRODUCTOS (GRID) ================= -->
+    <h2 class="text-center mb-4">Nuestros productos</h2>
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="product-card">
+          <h4>Espresso Clásico</h4>
+          <p>Un shot intenso y aromático, extraído en el punto justo para resaltar su cuerpo y crema.</p>
+          <button type="button" class="btn btn-product">Pedir ahora</button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="product-card">
+          <h4>Latte Vainilla</h4>
+          <p>Espresso suave combinado con leche cremosa y un toque natural de vainilla.</p>
+          <button type="button" class="btn btn-product">Pedir ahora</button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="product-card">
+          <h4>Croissant de Almendra</h4>
+          <p>Hojaldre horneado a diario, relleno con crema de almendras y cubierto de azúcar glass.</p>
+          <button type="button" class="btn btn-product">Pedir ahora</button>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="my-5">
+
+    <!-- ================= MISMA SECCIÓN, AHORA CON FLEXBOX ================= -->
+    <h2 class="text-center mb-4">Productos destacados (versión flex)</h2>
+    <div class="products-flex-row">
+
+      <div class="product-flex-item">
+        <div class="product-card">
+          <h4>Cold Brew</h4>
+          <p>Café de extracción en frío durante 12 horas, suave, refrescante y bajo en acidez.</p>
+          <button type="button" class="btn btn-product">Pedir ahora</button>
+        </div>
+      </div>
+
+      <div class="product-flex-item">
+        <div class="product-card">
+          <h4>Cheesecake de Maracuyá</h4>
+          <p>Base de galleta crocante con un cremoso relleno de queso y maracuyá natural.</p>
+          <button type="button" class="btn btn-product">Pedir ahora</button>
+        </div>
+      </div>
+
+      <div class="product-flex-item">
+        <div class="product-card">
+          <h4>Chocolate Caliente</h4>
+          <p>Elaborado con chocolate belga fundido y un toque de canela, ideal para días fríos.</p>
+          <button type="button" class="btn btn-product">Pedir ahora</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <!-- Izquierda: dirección comercial -->
+        <div class="col-md-4 text-left">
+          <h5>Visítanos</h5>
+          <address>
+            Café Aroma<br>
+            Av. Principal 123, Col. Centro<br>
+            Tegucigalpa, Honduras<br>
+            Tel: (504) 2222-3333<br>
+            <a href="mailto:contacto@cafearoma.com">contacto@cafearoma.com</a>
+          </address>
+        </div>
+
+        <!-- Centro: redes sociales -->
+        <div class="col-md-4 text-center">
+          <h5>Síguenos</h5>
+          <a href="#" target="_blank">Facebook</a>
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">TikTok</a>
+        </div>
+
+        <!-- Derecha: detalle del sitio -->
+        <div class="col-md-4 text-right">
+          <h5>Horario</h5>
+          <p>Lunes a Sábado<br>7:00 am - 8:00 pm</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p>&copy; 2026 Café Aroma. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: jQuery, Popper y Bootstrap JS -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

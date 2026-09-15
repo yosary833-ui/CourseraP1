@@ -1,0 +1,128 @@
+/* ==========================================================
+   Estilos generales del sitio - Café Aroma
+   ========================================================== */
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #fdfaf6;
+  color: #3b2b23;
+}
+
+.jumbotron {
+  background-color: #6f4e37;
+  color: #fff;
+  border-radius: 0;
+  text-align: center;
+}
+
+.jumbotron .display-4 {
+  font-weight: bold;
+}
+
+/* ==========================================================
+   Tarjetas de producto - clase reutilizable
+   Cambiar aquí el diseño actualiza TODOS los productos
+   ========================================================== */
+
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #e0d6cc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.product-card h4 {
+  color: #6f4e37;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  color: #5a4636;
+  margin-bottom: 15px;
+}
+
+.product-card .btn-product {
+  background-color: #6f4e37;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+}
+
+.product-card .btn-product:hover {
+  background-color: #543a29;
+  color: #fff;
+}
+
+/* ==========================================================
+   Sección de grilla convertida a flexbox
+   ========================================================== */
+
+.products-flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.products-flex-row .product-flex-item {
+  flex: 1 1 300px;
+  max-width: 33.3333%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .products-flex-row .product-flex-item {
+    max-width: 100%;
+  }
+}
+
+/* ==========================================================
+   Footer
+   ========================================================== */
+
+footer {
+  background-color: #3b2b23;
+  color: #f1e9e0;
+  padding: 40px 0 20px 0;
+  margin-top: 40px;
+}
+
+footer h5 {
+  color: #d9b48f;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+footer address {
+  font-style: normal;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #f1e9e0;
+  text-decoration: none;
+  margin-right: 12px;
+}
+
+footer a:hover {
+  color: #d9b48f;
+  text-decoration: underline;
+}
+
+footer .footer-bottom {
+  border-top: 1px solid #5a4636;
+  margin-top: 25px;
+  padding-top: 15px;
+  font-size: 0.9rem;
+}
